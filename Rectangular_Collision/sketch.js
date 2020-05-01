@@ -7,11 +7,12 @@ function setup() {
 }
 
 function draw() {
-  background(220);
-  rect(i,i,rectsize,rectsize);
-  rect(size-i-rectsize,size-i-rectsize,rectsize,rectsize);
-  rect(size-i-rectsize,i,rectsize,rectsize);
-  rect(i,size-i-rectsize,rectsize,rectsize);
+  background(0);
+  rect(i, i, rectsize, rectsize);
+  rect(size - i - rectsize, size - i - rectsize, rectsize, rectsize);
+  rect(size - i - rectsize, i, rectsize, rectsize);
+  rect(i, size - i - rectsize, rectsize, rectsize);
+  circle(size / 2, size / 2, rectsize * 2);
   i += speed;
   if (i >= size - rectsize) i = 0;
 }
